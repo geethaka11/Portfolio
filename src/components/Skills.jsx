@@ -50,10 +50,7 @@ const skillCategories = [
   }
 ];
 
-
 const Skills = () => {
-  const iconColor = "#2563EB";
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -78,7 +75,7 @@ const Skills = () => {
   };
 
   const cardVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       y: 50
     },
@@ -95,7 +92,7 @@ const Skills = () => {
   };
 
   const skillVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       scale: 0.8
     },
@@ -116,17 +113,17 @@ const Skills = () => {
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
-      className="px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-24 bg-gray-50"
+      className="px-6 pt-12 sm:px-8 sm:pt-16 lg:px-16 lg:pt-24 bg-light-background dark:bg-dark-background"
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
           variants={titleVariants}
-          className="mb-12 text-3xl font-bold text-center"
+          className="mb-12 text-3xl font-bold text-center text-light-text dark:text-dark-text"
         >
           Technical Skills
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 gap-6 md:grid-cols-2"
           variants={containerVariants}
         >
@@ -134,14 +131,18 @@ const Skills = () => {
             <motion.div
               key={index}
               variants={cardVariants}
-              className="transition-all duration-300 bg-white border rounded-2xl backdrop-blur-sm hover:shadow-lg"
+              className="transition-all duration-300 border bg-light-card dark:bg-dark-card border-light-border dark:border-dark-border rounded-2xl backdrop-blur-sm hover:shadow-lg hover:border-light-primary dark:hover:border-dark-primary"
             >
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <category.icon className="w-6 h-6" style={{ color: iconColor }} />
-                  <h3 className="text-xl font-semibold">{category.name}</h3>
+                  <category.icon
+                    className="w-5 h-5 text-blue-600 dark:text-blue-200"
+                  />
+                  <h3 className="text-xl font-semibold text-light-text dark:text-dark-text">
+                    {category.name}
+                  </h3>
                 </div>
-                <motion.div 
+                <motion.div
                   className="grid grid-cols-2 gap-4 sm:grid-cols-3"
                   variants={containerVariants}
                 >
@@ -149,13 +150,12 @@ const Skills = () => {
                     <motion.div
                       key={skillIndex}
                       variants={skillVariants}
-                      className="flex items-center gap-2 p-3 transition-colors bg-blue-50 rounded-2xl hover:bg-blue-100"
+                      className="flex items-center gap-2 p-3 transition-colors cursor-pointer bg-blue-50 dark:bg-blue-900/20 rounded-2xl hover:bg-blue-100 dark:hover:bg-blue-900/40"
                     >
                       <skill.icon
-                        className="w-5 h-5"
-                        style={{ color: iconColor }}
+                        className="w-5 h-5 text-blue-600 dark:text-blue-200"
                       />
-                      <span className="text-sm font-medium text-blue-600">
+                      <span className="text-sm font-medium text-blue-600 dark:text-blue-200">
                         {skill.name}
                       </span>
                     </motion.div>
