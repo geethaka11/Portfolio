@@ -9,21 +9,21 @@ const projects = [
     description: "A platform providing tailored fitness and nutrition plans with community engagement and a supplement store.",
     technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"],
     github: "https://github.com/geethaka11/BodySync",
-    image: "/placeholder.svg",
+    image: "/assets/bodysync.svg",
   },
   {
     title: "Online Food Ordering System",
     description: "A web application where users can browse food categories and order meals online.",
-    technologies: ["React", "CSS", "Node.js", "Firebase", "Express"],
+    technologies: ["Java", "JSP", "HTML", "Tailwind CSS", "JavaScript", "MySQL"],
     github: "https://github.com/PrasithDeAlwis/DineNow-Online-Food-Ordering-System",
-    image: "/placeholder.svg",
+    image: "/assets/dinenow.png",
   },
   {
     title: "Doctor Appointment System",
     description: "A booking platform for doctor appointments with search and management features.",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "MySQL", "PHP"],
     github: "https://github.com/SadeepaB/Doctor-appointment-System-Web-application-",
-    image: "/placeholder.svg",
+    image: "/assets/edoca.png",
   },
   {
     title: "Portfolio Website",
@@ -31,7 +31,7 @@ const projects = [
     technologies: ["React", "Tailwind CSS"],
     github: "https://github.com/geethaka11/Portfolio",
     live: "https://example.com",
-    image: "/placeholder.svg",
+    image: "/assets/geethaka.png",
   },
 ];
 
@@ -61,55 +61,24 @@ Card.defaultProps = {
 const Projects = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 }}
   };
 
   const cardVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-        when: "beforeChildren",
-      }
-    }
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut", when: "beforeChildren" } }
   };
 
   const imageVariants = {
-    hidden: {
-      scale: 1.2,
-      opacity: 0
-    },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+    hidden: { scale: 1.2, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.8, ease: "easeOut" } }
   };
 
   const techBadgeVariants = {
     hidden: { scale: 0, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.3
-      }
-    }
+    visible: { scale: 1, opacity: 1, transition: { duration: 0.3 } }
   };
+
 
   return (
     <section
@@ -143,7 +112,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="object-cover w-full h-full"
+                  className="object-contain w-full h-full bg-gray-100 dark:bg-gray-700 rounded-b-3xl"
                 />
               </motion.div>
               <div className="flex flex-col space-y-1.5 p-6">

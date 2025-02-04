@@ -3,8 +3,8 @@ import { GraduationCap, Code, Lightbulb, Brain, Target, Coffee } from "lucide-re
 
 const About = () => {
   const highlights = [
-    { icon: GraduationCap, title: "Education", description: "Computer Science undergraduate at Uva Wellassa University" },
-    { icon: Code, title: "Development", description: "Full-Stack Developer with MERN Stack expertise" },
+    { icon: GraduationCap, title: "Education", description: "Information & Communication Technology undergraduate at Uva Wellassa University" },
+    { icon: Code, title: "Development", description: "Full-Stack Developer with growing MERN Stack expertise" },
     { icon: Brain, title: "Learning Agility", description: "Rapid technology adaptation and continuous learning" },
     { icon: Target, title: "Strategic Thinking", description: "Solving complex problems with innovative solutions" },
     { icon: Lightbulb, title: "Innovation", description: "Creative approach to technical challenges" },

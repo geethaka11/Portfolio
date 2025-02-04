@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
@@ -9,13 +9,13 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const { theme, toggleTheme } = ThemeHook();
 
-  const menuItems = [
+  const menuItems = useMemo(() => [
     { title: 'Home', href: 'home' },
     { title: 'About', href: 'about' },
     { title: 'Skills', href: 'skills' },
     { title: 'Projects', href: 'projects' },
     { title: 'Contact', href: 'contact' },
-  ];
+  ], []);
 
   // Scroll effect
   useEffect(() => {
@@ -36,7 +36,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [menuItems]);
 
   return (
     <motion.nav
