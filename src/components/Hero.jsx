@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const contentVariants = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.2 } }
+    hidden: { opacity: 0, x: -200 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut", staggerChildren: 0.2 } }
   };
 
-  const photoVariants = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" }}
+  const imageVariants = {
+    hidden: { opacity: 0, x: 200 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } }
   };
 
   const childVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 }}
+    visible: { opacity: 1, y: 0, transition: { duration: 1 }}
   };
 
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
             variants={childVariants}
             className="mb-6 text-4xl font-bold md:text-6xl text-light-text dark:text-dark-text"
           >
-            Hi, I'm <span className="text-light-primary dark:text-dark-primary">Geethaka</span>
+            {`Hi, I'm `}<span className="text-light-primary dark:text-dark-primary">Geethaka</span>
           </motion.h1>
 
           <motion.p
@@ -61,7 +61,6 @@ const Hero = () => {
           </motion.div>
 
           <motion.div variants={childVariants} className="flex justify-center gap-4 lg:justify-start">
-            {/* Social Icons */}
             {[
               { Icon: Mail, href: "mailto:kalharageethaka12@gmail.com" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/geethaka-kalhara", external: true },
@@ -82,21 +81,27 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="relative fade-in"
-          variants={photoVariants}
+          className="relative flex items-center justify-center"
+          variants={imageVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <div className="overflow-hidden w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] rounded-2xl">
-            <motion.img
-              src="./assets/profile.jpg"
-              alt="Geethaka"
-              className="object-cover w-full h-full bg-gray-100 dark:bg-gray-800"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            />
-          </div>
+          <motion.div
+            className="overflow-hidden w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] xl:w-[32rem] xl:h-[32rem] bg-light-primary/20"
+            animate={{
+              borderRadius: [
+                "50% 50% 50% 50%",
+                "60% 40% 30% 70%",
+                "40% 60% 70% 30%",
+                "70% 30% 50% 50%",
+                "50% 50% 50% 50%"
+              ],
+              transition: { duration: 10, repeat: Infinity, ease: "easeInOut" }
+            }}
+          >
+            <img src="./assets/profile.png" alt="Geethaka" className="object-cover w-full h-full" />
+          </motion.div>
         </motion.div>
       </div>
     </section>

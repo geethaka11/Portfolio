@@ -43,7 +43,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.5 }}
     >
       <div className="max-w-4xl px-4 mx-auto">
         <div className="px-4 py-2 my-4 border shadow-sm rounded-2xl lg:rounded-full backdrop-blur-sm bg-white/80 dark:bg-gray-900/80 dark:border-gray-700">
@@ -66,8 +66,8 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   className={`relative px-2 py-1 transition-all duration-300 cursor-pointer
-                    ${activeSection === item.title.toLowerCase() 
-                      ? 'text-blue-600 dark:text-blue-400 font-medium' 
+                    ${activeSection === item.title.toLowerCase()
+                      ? 'text-blue-600 dark:text-blue-400 font-medium'
                       : 'text-gray-600 dark:text-gray-300'
                     }
                     hover:text-blue-600 dark:hover:text-blue-400
@@ -75,10 +75,10 @@ const Navbar = () => {
                   `}
                 >
                   {item.title}
-                  <span 
+                  <span
                     className={`absolute bottom-[-4px] left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform origin-left transition-transform duration-300
-                      ${activeSection === item.title.toLowerCase() 
-                        ? 'scale-x-100' 
+                      ${activeSection === item.title.toLowerCase()
+                        ? 'scale-x-100'
                         : 'scale-x-0'
                       }
                       group-hover:scale-x-0

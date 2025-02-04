@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pt-12 sm:pt-16 lg:pt-24">
+    <section id="contact" className="py-12 sm:py-16 lg:py24">
       <Toaster position="top-center" />
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <motion.h2
@@ -85,8 +85,8 @@ const Contact = () => {
           >
             <h3 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">Send Me a Message</h3>
             <p className="mb-6 text-gray-600 dark:text-gray-400">
-              I'd love to hear from you! Fill out the form below and I'll get
-              back to you soon.
+              {`I'd love to hear from you! Fill out the form below and I'll get
+              back to you soon.`}
             </p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <motion.div variants={formControlVariants}>

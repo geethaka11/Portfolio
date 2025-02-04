@@ -35,9 +35,9 @@ const About = () => {
           className="p-8 mb-12 transition-all duration-300 border bg-light-card dark:bg-dark-card border-light-border dark:border-dark-border rounded-2xl hover:shadow-lg hover:border-light-primary dark:hover:border-dark-primary"
         >
           <p className="text-lg leading-relaxed text-light-text dark:text-dark-text">
-            I'm a passionate Full-Stack Developer and ICT undergraduate, dedicated to crafting innovative web solutions.
+            {`I'm a passionate Full-Stack Developer and ICT undergraduate, dedicated to crafting innovative web solutions.
             With a strong foundation in modern technologies, I specialize in building scalable, user-centric applications
-            that solve real-world problems. My approach combines technical expertise with creative problem-solving.
+            that solve real-world problems. My approach combines technical expertise with creative problem-solving.`}
           </p>
         </motion.div>
 
