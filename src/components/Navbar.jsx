@@ -17,7 +17,6 @@ const Navbar = () => {
     { title: 'Contact', href: 'contact' },
   ], []);
 
-  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const sections = menuItems.map(item => item.title.toLowerCase());
@@ -57,7 +56,6 @@ const Navbar = () => {
               Geethaka
             </Link>
 
-            {/* Desktop Menu */}
             <div className="hidden space-x-6 md:flex">
               {menuItems.map((item) => (
                 <Link
@@ -88,7 +86,6 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Theme Toggle and Mobile Menu Button */}
             <div className="flex items-center space-x-4">
               <button
                 onClick={toggleTheme}
@@ -106,7 +103,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
           {isOpen && (
             <div className="py-2 md:hidden">
               <div className="flex flex-col space-y-2">
