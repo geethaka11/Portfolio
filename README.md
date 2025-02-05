@@ -1,4 +1,4 @@
-# Geethaka's Portfolio
+# Portfolio Project
 
 Welcome to my personal portfolio project! I'm **Geethaka**, a passionate **Full-Stack Developer**.
 
