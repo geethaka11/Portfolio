@@ -1,8 +1,18 @@
-# React + Vite
+# Geethaka's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio project! I'm **Geethaka**, a passionate **Full-Stack Developer**.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **React.js**
+- **Vite**
+- **Tailwind CSS**
+- **JavaScript**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+Check out the live version of my portfolio: [geethaka.vercel.app](https://geethaka.vercel.app)
+
+## Contact
+You can reach me at:
+- Email: [kalharageethaka12@gmail.com](mailto:kalharageethaka12@gmail.com)
+- LinkedIn: [Geethaka Kalhara](https://www.linkedin.com/in/geethaka-kalhara)
+- GitHub: [geethaka11](https://github.com/geethaka11)
