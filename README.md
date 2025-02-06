@@ -2,14 +2,14 @@
 
 Welcome to my personal portfolio project! I'm **Geethaka**, a passionate **Full-Stack Developer**.
 
+## Live Demo
+Check out the live version of my portfolio: [geethaka.vercel.app](https://geethaka.vercel.app)
+
 ## Technologies Used
 - **React.js**
 - **Vite**
 - **Tailwind CSS**
 - **JavaScript**
-
-## Live Demo
-Check out the live version of my portfolio: [geethaka.vercel.app](https://geethaka.vercel.app)
 
 ## Contact
 You can reach me at:
