@@ -48,8 +48,8 @@ const Hero = () => {
             <motion.button
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = 'assets/Geethaka_Kalhara CV.pdf';
-                link.download = 'Geethaka_Resume';
+                link.href = 'assets/Geethaka Kalhara CV.pdf';
+                link.download = 'Geethaka_CV';
                 link.click();
               }}
               whileTap={{ scale: 0.8 }}
@@ -65,7 +65,7 @@ const Hero = () => {
               { Icon: Mail, href: "mailto:kalharageethaka12@gmail.com" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/geethaka-kalhara", external: true },
               { Icon: Github, href: "https://github.com/geethaka11", external: true },
-              { Icon: Phone, href: "tel:+94771236541" }
+              { Icon: Phone, href: "tel:+9477773354606" }
             ].map(({ Icon, href, external }) => (
               <motion.a
                 key={href}
