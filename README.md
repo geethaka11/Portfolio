@@ -11,8 +11,14 @@ Check out the live version of my portfolio: [geethaka.vercel.app](https://geetha
 - **Tailwind CSS**
 - **JavaScript**
 
+## Features
+- **Dark & Light mode toggle**
+- **Contact form with EmailJS**
+- **Fully responsive design**
+
 ## Contact
 You can reach me at:
 - Email: [kalharageethaka12@gmail.com](mailto:kalharageethaka12@gmail.com)
 - LinkedIn: [Geethaka Kalhara](https://www.linkedin.com/in/geethaka-kalhara)
 - GitHub: [geethaka11](https://github.com/geethaka11)
+- Website: [geethaka.vercel.app](https://geethaka.vercel.app)
